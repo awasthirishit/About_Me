@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Rishit Awasthi"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/what_s_your_name_buddy"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        android:textColorHint="@color/purple_200" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Enter"
+        android:onClick="name"
+        />
+    <TextView
+        android:id="@+id/new_nameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/purple_700"
+        android:textSize="22sp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="
+Hi, my name is Rishit.
+\n\nAndroid Developer (Kotlin/Java),
+\nRoboticist(Path Planning , SLAM , ROS , ML/DL) ,
+\nDevops Engineer(Begineer),
+\nWeb Developer(HTML,CSS,Javascript,RESTful APIs)
+\n\nThings I Explored during my Bachelors Journey :
+        \n- Robotics
+        \n- Web Development(Frontend+Deployment)
+        \n- App Development(Java, Kotlin)
+        \n- Devops (CI/CD ,Containers,Terraform,Jenkins)
+        \n- Rocket Science (after reading ELON's biography)
+        \n- Material Engineering (Visualization End)
+        \n- Self Driving Cars (CARLA simulator,
+State Estimation and Localization ,
+Visual Perception ,
+Motion Planning )
+\n\n*Above written values are highly manipulated just to make this view as a scroll view "
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
